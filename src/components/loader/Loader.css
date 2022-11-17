@@ -1,0 +1,29 @@
+.loader-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    animation: fadeOut 2.5s ease 1;
+    animation-delay: 4s;
+    background: transparent;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    position: fixed;
+}
+
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .loader-container img{
+        width: 90%;
+    }
+}
